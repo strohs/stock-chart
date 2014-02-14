@@ -9,15 +9,7 @@
 ;package for manipulating earnings data and stock price data
 ;(defrecord EarningsPriceData)
 
-(defn- prices-by-day-range
-  "get price data within a range of days before and days after 'date'.
-  Retuns a coll of price data, else nil if date not found"
-  [prices date days-before days-after]
-  ;get index of first matching date in prices and return a slice of prices else nil
-  (if-let [date-idx (first (keep-indexed #(if (= (:date %2) date) %1) prices))]
-    (do
-      (utils/slice prices (- date-idx days-before) (+ date-idx days-after 1)))
-    (list)))
+
 
 (defn prices-by-earnings-date
   "group historical price data and earnings data into a single map"

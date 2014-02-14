@@ -35,8 +35,9 @@
   [csv-data]
   (reduce (fn [accum v]
             (let [data-map (zipmap [:date :open :high :low :close :volume :adj-close] (map utils/parse-string v))
-                  closing-data (map->ClosingData data-map)]
-              (conj accum closing-data))) '() (rest csv-data)))
+                  ;closing-data (map->ClosingData data-map)
+                  ]
+              (conj accum data-map))) '() (rest csv-data)))
 
 (defn- daily-prices
   "retrieves daily closing price data from yahoo. returns a parsed csv as a seq of vectors containing historical

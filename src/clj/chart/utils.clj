@@ -19,11 +19,11 @@
 
 (defn str->joda
   "parse the string s into a Joda DateTime object using the specified date-fmt string."
-  [s date-fmt]
-  (jf/parse (jf/formatter date-fmt) s))
+  ([s] (jf/parse (jf/formatter "yyyy-MM-dd") s))
+  ([s date-fmt] (jf/parse (jf/formatter date-fmt) s)))
 
 (defn str->numeric
-  "parse string data into an int or double, if possible, otherwise return the original string"
+  "parse string data into an int or double if possible, otherwise return the original string"
   [s]
   (cond
     (nil? s) s
@@ -52,6 +52,11 @@
   [v start-idx end-idx]
   (let [indexes (set (range start-idx end-idx))]
     (vec (keep-indexed #(if (contains? indexes %1) %2) v))))
+
+(defn find-index
+  "find the index of the first matching item in the coll"
+  [coll item]
+  (ffirst (filter #(= item (second %)) (map-indexed vector coll))))
 
 (defn file-names
   "get names of files in a directory, filter names by suffix"

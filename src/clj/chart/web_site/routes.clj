@@ -16,18 +16,20 @@
 
 (defroutes main-routes
            (GET "/" [] (resp/redirect "/index.html"))
-           (GET "/a" [] (resp/resource-response "/index.html" {:root "public"}))
-           (GET "/f" [] (clojure.java.io/resource "public/index.html"))
+           (GET "/data/:ticker/:date" [ticker date] (str "place holder for " ticker " " date))
+           (GET "/earnings/:ticker/:date" [ticker date] (str "place holder earnings " ticker " " date))
+           ;(GET "/a" [] (resp/resource-response "/index.html" {:root "public"}))
+           ;(GET "/f" [] (clojure.java.io/resource "public/index.html"))
            (route/resources "/"))
 
 
-(defroutes api-routes
-           (GET "/user/:id" [id] (str "you hit the user route: " id))
-           (GET "/json/:id" [id] (json-response {"fookey" id :cljkey "clj1234"}))
-           )
+;(defroutes api-routes
+;           (GET "/user/:id" [id] (str "you hit the user route: " id))
+;           (GET "/json/:id" [id] (json-response {"fookey" id :cljkey "clj1234"}))
+;           )
 
 
 
 (def app
-  (-> (routes main-routes api-routes (route/not-found "Page not found"))
-      (handler/site)))
+  (-> (routes main-routes (route/not-found "Page not found"))
+      (handler/api)))

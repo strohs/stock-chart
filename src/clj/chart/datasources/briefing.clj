@@ -81,8 +81,9 @@
   [path]
   (let [scraped (scrape-data path) ;returns coll of maps (scraped by enlive)
         normalized (repair-quarters (map extract scraped)) ;try to fix any missing quarter data
-        earnings-data (map #(map->EarningsData %) normalized)]
-    (sort-by :release-date-joda earnings-data)))
+                                   ;earnings-data (map #(map->EarningsData %) normalized)
+        ]
+    (sort-by :release-date-joda normalized)))
 
 ;TODO earnings util functions start here. Move to different namespace
 (defn same-quarter
