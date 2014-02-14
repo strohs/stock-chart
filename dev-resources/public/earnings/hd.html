@@ -1,0 +1,3726 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <title>Briefing.com: Ticker Search</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <div id="DocumentHead">
+        <link rel="stylesheet" href="http://era.briefing.com/Common/Css/InPlayEQ/BriefingCombined/Briefing.combo.all.css?v=c201310141" type="text/css" media="screen" title="no title" charset="utf-8" />
+    </div>
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="/Common/Css/jquery/jquery-ui-1.10.0.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+
+    <!-- overrides jQuery UI styles so it needs to load after the jQuery UI -->
+    <link rel="stylesheet" href="/Common/Css/InplayEQJSON/dialogs.css?v=c201309301" type="text/css" media="screen" title="no title" charset="utf-8" />
+
+    <div id="AllPagesHeadScriptInclude">
+        <!-- the only js file allowed in the head, all the others should be set in the bottom of the page using Briefing.getScripts -->
+        <script src="/Common/Javascript/InPlayEQJSON/Briefing.js?v=j20131021" type="text/javascript" charset="utf-8"></script>
+    </div>
+</head>
+<body>
+<span id="AudioSpan"></span>
+
+<table style="width:100%; text-align:center;" cellspacing="0" cellpadding="0" border="0" >
+<tr><td><img alt="" src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="10px" height="10"></td>
+    <td valign="top" style="text-align:left;">
+        <div id="PageHeader">
+        </div>
+        <img alt="" src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="700px" height="4">
+    </td>
+    <td style="text-align:left;">
+        <div id="Search"></div>
+
+    </td>
+    <td><img alt="" src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="10px" height="10"></td>
+</tr>
+<tr><td><img alt="" src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="10px" height="10"></td>
+<td colspan="2" style="width:100%;"><div id="Content">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <script language="JavaScript">
+        function clearViewState(){
+            var v = document.getElementById('__VIEWSTATE');
+            v.parentNode.removeChild(v);
+            //Reset Min & Max to fix paging issue
+            var MinId = document.getElementById('MinId');
+            MinId.value = 1;
+            var MaxId = document.getElementById('MaxId');
+            MaxId.value = 100;
+            var NumberOfPastMonths = document.getElementById('NumberOfPastMonths');
+            NumberOfPastMonths.value = 3;
+        }
+    </script>
+    <title>
+        Briefing.com Ticker Search
+    </title></head>
+<body>
+<form name="TickerSearchForm" method="get" action="TickerSearchInPlayEq.aspx?SearchTextBox=hd&amp;PagePrefix=EQEarningsResults" id="TickerSearchForm" style="text-align: right;">
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjAxODc4NjI5NWQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFDFNlYXJjaEJ1dHRvbs24H+ml8LkhKW7/Ka7vXU8/l1Ba" />
+
+    <input name="SearchTextBox" type="text" id="SearchTextBox" style="padding: 0px; margin: 0px; width: 90px; height: 15px; font-size: xx-small; font-family: 'Trebuchet MS'; font-weight: normal; text-transform: uppercase;" value="HD" onKeyPress="return Briefing.util.submitenter (this, event, 'SearchButton')" />
+    <img width="8" height="5" src="/Common/Images/InPlayEQ/Global/spacer.gif" alt=""/>
+    <input type="image" name="SearchButton" id="SearchButton" align="top" class="vspace2px" src="/Common/Images/InPlayEQ/Global/SearchBtn-green.gif" border="0" onclick="clearViewState();" language="javascript" style="height:16px;width:55px;" />
+    <hr class="lightGray2" style="height: 1px;"/>
+
+
+    <input type="hidden" name="PagePrefix" id="PagePrefix" value="EQEarningsResults" />
+    <input type="hidden" name="NumberOfPastMonths" id="NumberOfPastMonths" value="-1" />
+    <input type="hidden" name="MinId" id="MinId" value="1" />
+    <input type="hidden" name="MaxId" id="MaxId" value="100" />
+
+    <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBwLV2eT7BwKx0Ju9AgLR1viaCQLi2tfoBwKHk+ngCAKRnf2sBQK/ks3RBbiSVKbXEZhuPvBEVg/a+urDXXk6" /></form>
+<div id="ResultsDiv"><span id="sortbodytagoverride" style="display; none;"></span><table style="width:100%;text-align:left;" border="0">
+    <tr>
+        <td style="width:20%;"><span class="largeFontBoldBlack">HOME DEPOT
+            (HD)
+          </span></td>
+        <td style="width:80%;"><span class="boldText">
+                    SECTOR: Consumer Discretionary</span><span class="boldText" style="padding-left:20px;">
+                    INDUSTRY: Specialty Retail</span></td>
+    </tr>
+</table><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="10" height="10"><table style="width: 100%; nowrap:nowrap; min-width: 952px;" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+    <tr><td colspan="3"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="700" height="0"></td></tr>
+    <tr>
+        <td style="width: 10px; border-style: none; border-width: 0"><IMG alt="" src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/topRowLeft.gif?v=i000000000" width="10" style="height: 22px"></td>
+        <td class="TableTopRow" style="text-align:left;width:52%">
+            <div id="OnlyHighlightWordsAfterThis"></div>
+        </td>
+        <td class="TableTopRow" style="width:48%;text-align:right;">
+            <table class="innernavigationmenu" style="width: 630px;" cellspacing="0" cellpadding="0" border="0">
+                <tr style="text-align: center;">
+                    <td class="rtopmenu" style="width: 2px"><img alt="" src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/MenuDivider.gif?v=i000000000" width="2" height="22"></td>
+                    <td class="rtopmenu SearchInPlay" style="width:14%"><a class="rtopmenuLink SearchInPlay" href="/GeneralContent/InPlayEQ/Active/TickerSearch/TickerSearchInPlayEq.aspx?SearchTextBox=HD">
+                        LIVE IN PLAY</a></td>
+                    <td class="rtopmenu" style="width: 2px"><img alt="" src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/MenuDivider.gif?v=i000000000" width="2" height="22"></td>
+                    <td class="rtopmenu SearchUpDown" style="width:22%"><a class="rtopmenuLink SearchUpDown" href="/GeneralContent/InPlayEQ/Active/TickerSearch/TickerSearchInPlayEq.aspx?PagePrefix=EQUpgradesDowngrades&amp;SearchTextBox=HD">
+                        UPGRADES/DOWNGRADES</a></td>
+                    <td class="rtopmenu" style="width: 2px"><img alt="" src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/MenuDivider.gif?v=i000000000" width="2" height="22"></td>
+                    <td class="rtopmenu SearchEarningsResult" style="width:11%"><a class="rtopmenuLink SearchEarningsResult" href="/GeneralContent/InPlayEQ/Active/TickerSearch/TickerSearchInPlayEq.aspx?PagePrefix=EQEarningsResults&amp;SearchTextBox=HD">
+                        EARNINGS</a></td>
+                    <td class="rtopmenu" style="width: 2px"><img alt="" src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/MenuDivider.gif?v=i000000000" width="2" height="22"></td>
+                    <td class="rtopmenu SearchGuidance" style="width:11%"><a class="rtopmenuLink SearchGuidance" href="/GeneralContent/InPlayEQ/Active/TickerSearch/TickerSearchInPlayEq.aspx?PagePrefix=EQEarningsGuidance&amp;SearchTextBox=HD">
+                        GUIDANCE</a></td>
+                    <td class="rtopmenu" style="width: 2px"><img alt="" src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/MenuDivider.gif?v=i000000000" width="2" height="22"></td>
+                    <td class="rtopmenu SearchEventConf" style="width:8%"><a class="rtopmenuLink SearchEventConf" href="/GeneralContent/InPlayEQ/Active/TickerSearch/TickerSearchInPlayEq.aspx?PagePrefix=EQEventConferenceCalendar&amp;SearchTextBox=HD">
+                        EVENTS</a></td>
+                    <td class="rtopmenu" style="width: 2px"><img alt="" src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/MenuDivider.gif?v=i000000000" width="2" height="22"></td>
+                    <td class="rtopmenu SearchIPO" style="width:6%"><a class="rtopmenuLink SearchIPO" href="/GeneralContent/InPlayEQ/Active/TickerSearch/TickerSearchInPlayEq.aspx?PagePrefix=EQIPOCalendar&amp;SearchTextBox=HD">
+                        IPO</a></td>
+                    <td class="rtopmenu" style="width: 2px"><img alt="" src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/MenuDivider.gif?v=i000000000" width="2" height="22"></td>
+                    <td class="rtopmenu SearchSameStoreSales" style="width:18%"><a class="rtopmenuLink SearchSameStoreSales" href="/GeneralContent/InPlayEQ/Active/TickerSearch/TickerSearchInPlayEq.aspx?PagePrefix=EQSameStoreSales&amp;SearchTextBox=HD">
+                        SAME STORE SALES</a></td>
+                    <td class="rtopmenu" style="width: 2px"><img alt="" src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/MenuDivider.gif?v=i000000000" width="2" height="22"></td>
+                    <td class="rtopmenu SearchSplits" style="width:7%"><a class="rtopmenuLink SearchSplits" href="/GeneralContent/InPlayEQ/Active/TickerSearch/TickerSearchInPlayEq.aspx?PagePrefix=EQSplitsCalendar&amp;SearchTextBox=HD">
+                        SPLITS</a></td>
+                    <td class="rtopmenu" style="width: 2px"><img alt="" src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/MenuDivider.gif?v=i000000000" width="2" height="22"></td>
+                </tr>
+            </table>
+        </td>
+        <td style="width: 10px; border-style: none; border-width: 0"><IMG alt="" src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/topRowRight.gif?v=i000000000" width="10" style="height: 22px"></td>
+    </tr>
+    </tbody>
+</table>
+<table class="contentBorder search-results" cellspacing="0" cellPadding="0" style="width:100%" border="1">
+    <tr>
+        <td class="darkGray">
+            <div id="searchDateRange" class="search-header-btn" style="display:inline;">DATE RANGE <img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/BlueDownArrow.gif?v=i000000000" alt="" width="9" height="9"></div>
+        </td>
+    </tr>
+    <tr class="goldRowBold">
+        <td colspan="3" class="mainTitleBold" style="text-align:left;">FUTURE EVENTS</td>
+    </tr><tr class="boldTextTopRowGold">
+    <td>
+        <table cellSpacing="0" cellPadding="0" style="width:100%">
+            <tr class="boldTextTopRowGold">
+                <td class="mainTitleBold" style="width:12%;">
+                    <div class="margin-left">Date</div>
+                </td>
+                <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+                <td class="mainTitleBold" style="width:12%;">
+                    <div class="margin-left">Page</div>
+                </td>
+                <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+                <td class="mainTitleBold" style="width:66%;">
+                    <div class="margin-left">Event</div>
+                </td>
+                <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+                <td class="mainTitleBold" style="text-align:center">
+                    Add Event
+                </td>
+            </tr>
+            <tr class="rD">
+                <td nowrap valign="Top" style="font-weight:normal">
+                    <div class="margin-left">25-Feb-14</div>
+                </td>
+                <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+                <td valign="Top" style="font-weight:normal">
+                    <div class="margin-left">Earnings</div>
+                </td>
+                <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+                <td valign="Top" style="font-weight:normal">
+                    <div class="margin-left">Next earnings release: Feb 25 before market, unconfirmed. Capital IQ estimate: 0.73</div>
+                </td>
+                <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+                <td style="text-align:center" class="calendarColumn">
+                </td>
+            </tr>
+            <tr class="rL">
+                <td nowrap valign="Top" style="font-weight:normal">
+                    <div class="margin-left">11-Dec-13</div>
+                </td>
+                <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+                <td valign="Top" style="font-weight:normal">
+                    <div class="margin-left">Meetings</div>
+                </td>
+                <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+                <td valign="Top" style="font-weight:normal">
+                    <div class="margin-left">Home Depot Investor and Analyst Conference 2013 (<span style='BACKGROUND-COLOR: yellow'>HD</span>)</div>
+                </td>
+                <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+                <td style="text-align:center" class="calendarColumn">
+                    <img class="AddEvents" src="/Common/Images/InPlayEQ/EarningsEvents/icon-AddEvent.gif" alt="Add Events" AddEventCal="/GeneralContent/InPlayEQ/Active/EventConferenceCalendar/CalendarEvent.aspx?EventName=Home%20Depot%20Investor%20and%20Analyst%20Conference%202013&amp;StartDate=12/11/2013&amp;EndDate=12/11/2013&amp;StartTime=09:00&amp;Timezone=EST&amp;Location=Boston&amp;CalType=MSOutLookCalendar&amp;Presenter=False" style="cursor:pointer;"><a class="EventCal" style="display:none" href="#"></a></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+</table>
+<table cellSpacing="0" cellPadding="0" style="width:100%"><tr>
+<td>
+<table class="contentBorder search-results" cellspacing="0" cellpadding="0" style="width:100%"><thead>
+<tr class="goldRowBold">
+    <td class="mainTitleBold" colSpan="25" style="text-align:left;">EARNINGS RESULTS</td>
+</tr>
+<tr class="boldTextTopRowGold">
+    <td class="sortable defaultsort mainTitleBold" style="width:7%; text-indent: 10px;">Date</td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td class="mainTitleBold" style="width:7%;line-height:18px;">Fiscal<br>End</td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td class="mainTitleBold" style="width:7%;line-height:18px;">Fiscal<br>Qtr</td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td class="mainTitleBold" style="width:7%;">Time</td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td class="sortable mainTitleBold" style="width:8%;">Surprise</td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td class="mainTitleBold" style="width:8%;">Actual</td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td class="mainTitleBold" style="width:12%;" nowrap="true">Consensus</td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td class="mainTitleBold" style="width:12%;">1 Year Ago</td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td class="mainTitleBold" style="width:12%;line-height:18px;">Actual Revenue</td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td class="mainTitleBold" style="width:12%;line-height:18px;">Rev Consensus</td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td class="mainTitleBold" style="width:12%;line-height:18px;">Year to Year Revenue</td>
+</tr>
+</thead>
+<tr class="rD">
+    <td>
+        <div class="margin-left">19-Nov-13</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">201310</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">3</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.06</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.95</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.89</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.74</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">19470</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">19158.06</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">7.4 %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">20-Aug-13</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">201307</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">2</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.03</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1.24</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1.21</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1.01</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">22522</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">21787.53</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">9.5 %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">21-May-13</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">201304</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.07</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.83</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.76</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.65</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">19124</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">18612.77</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">7.4 %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">26-Feb-13</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">201301</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.03</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.67</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.64</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.50</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">18246</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">17689.02</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">13.9 %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">13-Nov-12</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">201210</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">3</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.03</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.74</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.71</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.60</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">18130</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">17901.47</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4.6 %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">14-Aug-12</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">201207</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">2</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.03</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1.01</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.98</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.86</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">20570</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">20735.61</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1.7 %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">15-May-12</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">201204</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.65</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.65</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.50</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">17808</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">17885.41</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">5.9 %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">21-Feb-12</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">201201</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.07</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.50</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.43</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.36</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">16014</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">15473.63</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">5.9 %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">15-Nov-11</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">201110</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">3</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.02</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.60</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.58</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.51</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">17326</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">17115.81</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4.4 %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">16-Aug-11</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">201107</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">2</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.04</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.86</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.82</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.72</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">20232</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">19961.77</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4.2 %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">17-May-11</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">201104</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.50</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.45</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">16823</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">-0.2 %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">22-Feb-11</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">201101</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.36</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.24</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">15126</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">3.8 %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">16-Nov-10</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">201010</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">3</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.51</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.41</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">16598</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1.4 %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">17-Aug-10</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">201007</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">2</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.72</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.64</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">19400</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1.7 %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">18-May-10</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">201004</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.45</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.35</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">16863.0</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4.3 %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">23-Feb-10</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">201001</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.24</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.19</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">14569</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">-0.3 %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">17-Nov-09</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200910</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">3</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.41</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.45</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">16361.0</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">-8.0 %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">18-Aug-09</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200907</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">2</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.64</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.71</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">19071.0</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">-9.1 %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">19-May-09</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200904</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.35</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.41</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">16175.0</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">-9.7 %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">24-Feb-09</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200901</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.19</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.40</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">14607.0</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">-17.3 %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">18-Nov-08</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200810</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">3</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.45</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.59</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">17784.0</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">-6.2 %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">19-Aug-08</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200807</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">2</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.71</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.77</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">20990.0</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">-5.4 %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">20-May-08</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200804</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.41</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.53</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">17907.0</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">-3.4 %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">26-Feb-08</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200801</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.40</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.50</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">17659.0</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1.5 %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">13-Nov-07</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200710</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">3</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.59</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.73</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">18961</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">-3.5 %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">14-Aug-07</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200707</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">2</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.77</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.93</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">22184.0</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">-1.8 %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">15-May-07</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200704</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.53</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.70</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">21585.0</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.6 %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">20-Feb-07</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200701</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.50</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.60</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">20265</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4.0 %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">14-Nov-06</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200610</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">3</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.73</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.72</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">23085</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">11.3 %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">15-Aug-06</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200607</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">2</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.93</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.82</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">26026.0</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">16.7 %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">16-May-06</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200604</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.70</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.60</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">21461.0</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">13.1 %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">21-Feb-06</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200601</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.60</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.47</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">19489.0</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">15.9 %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">15-Nov-05</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200510</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">3</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.72</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.60</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">20744.0</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">10.5 %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">16-Aug-05</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200507</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">2</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.82</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.71</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">22305.00</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">11.7 %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">17-May-05</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200504</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.57</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.52</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">18973</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">8.1 %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">22-Feb-05</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200501</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.47      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.42      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">16812.00  </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">11.2       %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">16-Nov-04</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200410</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">3</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.60      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.50      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">18772.00  </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">13.1       %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">17-Aug-04</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200407</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">2</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.71      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.56      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">19960.00  </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">11.0       %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">18-May-04</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200404</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.49      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.39      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">17550.00  </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">16.2       %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">24-Feb-04</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200401</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.42      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.30      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">15125     </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">14.5       %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">18-Nov-03</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200310</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">3</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.50      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.40      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">16598     </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">14.7       %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">19-Aug-03</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200307</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">2</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.56      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.50      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">17989     </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">10.5       %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">20-May-03</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200304</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.39      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.36      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">15104     </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">5.8        %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">25-Feb-03</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200301</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.30      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.30      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1321.3    </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">-2.0       %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">19-Nov-02</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200210</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">3</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.40      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.33      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">14475     </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">8.9        %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">20-Aug-02</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200207</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">2</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.50      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.39      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">16277.0   </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">11.7       %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">21-May-02</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200204</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.36      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.27      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">14282.0   </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">17.1       %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">26-Feb-02</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200201</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.30      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.20      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">13488.0   </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">28.9       %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">13-Nov-01</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200110</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">3</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.33      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.28      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">13289.0   </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">15.1       %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">14-Aug-01</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200107</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">2</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.39      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.36      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">14576.0   </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">15.5       %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">15-May-01</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200104</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.27      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.27      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">12200     </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">9.8        %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">20-Feb-01</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200101</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.20      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.25      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">10463     </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">14.1       %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">14-Nov-00</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200010</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">3</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.28      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.25      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">11545.0   </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">16.9       %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">15-Aug-00</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200007</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">2</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.36      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.29      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">12618     </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">21.0       %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">16-May-00</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200004</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">1</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.27      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.21      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">11112     </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">24.1       %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">22-Feb-00</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">200001</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">4</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.25      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.18      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">9174      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">26.4       %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">16-Nov-99</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">199910</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">3</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.37      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.26      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">9877      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">28.3       %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">17-Aug-99</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.44      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.31      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">28.2       %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">18-May-99</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.32      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.22      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">25.7       %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">23-Feb-99</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.27      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.20      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">26.6       %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">17-Nov-98</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.26      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.20      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">23.8       %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">18-Aug-98</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.31      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.24      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">24.3       %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">19-May-98</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.45      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.35      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">25.9       %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">24-Feb-98</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.41      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.34      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">15.6       %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">18-Nov-97</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.40      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.30      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">26.3       %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">19-Aug-97</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.48      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.37      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">23.8       %
+        </div>
+    </td>
+</tr>
+<tr class="rD">
+    <td>
+        <div class="margin-left">20-May-97</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.53      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.41      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">33.0       %
+        </div>
+    </td>
+</tr>
+<tr class="rL">
+    <td>
+        <div class="margin-left">25-Feb-97</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">Before</div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.52      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            -- </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">0.39      </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center"></div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">
+            --
+        </div>
+    </td>
+    <td class="VerticalRowDotted" style="width:1px;"><img src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="1"></td>
+    <td>
+        <div class="margin-center">32.2       %
+        </div>
+    </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<div id="BottomGrayCap" style="width:100%;">
+    <TABLE style="width:100%" cellpadding="0" cellspacing="0">
+        <TR>
+            <TD valign="top" style="text-align: left;   background-image: url('http://epic.briefing.com/Common/Images/InPlayEQ/Global/bottom_capMid.gif?v=i000000000'); border-left-width:0px; border-right-width:0px" colspan="13"><IMG alt="" src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/bottom_capLeft.gif?v=i000000000" width="20" height="9" align="top"></TD>
+            <TD valign="top" style="text-align: right; background-image: url('http://epic.briefing.com/Common/Images/InPlayEQ/Global/bottom_capMid.gif?v=i000000000')"><IMG alt="" src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/bottom_capRight.gif?v=i000000000" width="20" height="9" align="top"></TD>
+        </TR>
+    </TABLE><IMG src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="10" height="10"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="urn:www.briefing.com">
+    <tr class="rE"><td height="1">
+        <table border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td></td></tr></table>
+    </td>
+    </tr>
+</table>
+<table style="text-align:left;width:100%;"><tr><td class="smallTextblack">
+    Consensus EPS and Revenue Estimates provided by Capital IQ, a Standard &amp; Poor's business.
+</td></tr></table>
+<div style="display: none;" id="searchvalue" searchText="hd" months="-1" contentLevel="BRF_IN"></div>
+<!-- EQTickerSearchEarningsCalendarContent -7074 -->
+</div>
+</body>
+</html>
+</div></td>
+<td><img alt="" src="http://epic.briefing.com/Common/Images/InPlayEQ/Global/spacer.gif?v=i000000000" width="10px" height="10"></td>
+</tr>
+</table>
+
+<div hasState="false" id="PageInfo" pageid="-9031" saveStatePageId="" printPageId="" pagename="EqTickerSearchAspx" style="display:none;"></div>
+<table id="addQuickLinksHere" style="display : none;"></table>
+<div id="BottomInclude"></div>
+<div id="ExtraBottomInclude">
+    <script type="text/javascript">
+        Briefing.execAfterDependencies('init_innermenu', [], ['menu'], true,
+                (function() {
+                    Briefing.Menu.initializeInnerNav();
+                    Briefing.register('init_innermenu', Briefing.Menu);
+                }));
+    </script>
+</div>
+<div id="SearchBottomInclude"></div>
+<div class="yui-skin-sam">
+    <div id="TrialTipPanel" style="visibility:hidden">
+        <div class="hd">Tip of the Day</div>
+        <div class="bd" style="padding: 0px;" ></div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="/Common/Javascript/jquery/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" charset="utf8" src="/Common/Javascript/jquery/jquery-ui-1.10.0.js"></script>
+
+<!-- YUI -->
+<script src="/Common/Javascript/2.5.2/combo/combo.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" language="JavaScript" src="/Common/Javascript/TrialTips/TrialTip.js?v=j20131021" charset="utf-8"></script>
+<script src="/Common/Javascript/InPlayEQJSON/Briefing.config.js?v=j20131021" type="text/javascript" charset="utf-8"></script>
+<script src="/Common/Javascript/InPlayEQJSON/Briefing.user.js?v=j20131021" type="text/javascript" charset="utf-8"></script>
+<script src="/Common/Javascript/InPlayEQJSON/Briefing.PageUpdates.js?v=j20131021" type="text/javascript" charset="utf-8"></script>
+<script src="/Common/Javascript/InPlayEQJSON/Briefing.util.js?v=j20131021" type="text/javascript" charset="utf-8"></script>
+<script src="/Common/Javascript/InPlayEQJSON/Briefing.common.js?v=j20131021" type="text/javascript" charset="utf-8"></script>
+<script src="/Common/Javascript/InPlayEQJSON/Briefing.Tools.js?v=j20131021" type="text/javascript" charset="utf-8"></script>
+<script src="/Common/Javascript/InPlayEQJSON/Briefing.Menu.js?v=j20131021" type="text/javascript" charset="utf-8"></script>
+<script src="/Common/Javascript/InPlayEQJSON/Briefing.Search.js?v=j20131021" type="text/javascript" charset="utf-8"></script>
+
+<script src="/Common/Javascript/InPlayEQJSON/Briefing.DataSource.js?v=j20131021" type="text/javascript" charset="utf-8"></script>
+<script src="/Common/Javascript/InPlayEQJSON/Briefing.Alerts.Fire.js?v=j20131021" type="text/javascript" charset="utf-8"></script>
+
+<script src="/Common/Javascript/InPlayEQJSON/Briefing.Alerts.Match.js?v=j20131021" type="text/javascript" charset="utf-8"></script>
+<script src="/Common/Javascript/InPlayEQJSON/Briefing.Alerts.Audio.js?v=j20131021" type="text/javascript" charset="utf-8"></script>
+<script src="/Common/Javascript/InPlayEQJSON/Briefing.Alerts.Visual.js?v=j20131021" type="text/javascript" charset="utf-8"></script>
+<!-- Start PageTracking Fragment -->
+<div id="PageTrackingDcsTags">
+    <script type="text/javascript" language="JavaScript" src="/Common/Javascript/PageTracking/PageTracking.js"></script>
+
+</div>
+<!-- End PageTracking Fragment -->
+<div id="guidance.overlay" style="position: absolute; top: 0px; left: 0px; visibility:hidden">
+    <div class="bd" />
+</div>
+<!-- hidden divs for dialog boxes -->
+<div id="alertDialog" style="display: none"></div>
+<div id="audioDiv" style="display: none"></div>
+</body>
+</html>
+<script type="text/javascript" src="http://tcr.tynt.com/javascripts/Tracer.js?user=bE9by4aK0r4jhOadbi-bpO"></script><!-- 12/06/13 12:39:04 P-9031 S24 -->

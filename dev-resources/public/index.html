@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Stock Chart bREPL Connection</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="css/rickshaw.css">
+    <!--<link type="text/css" rel="stylesheet" href="css/lines.css">-->
+
+    <script src="jslibs/d3.v3.js"></script>
+
+    <script src="jslibs/rickshaw.js"></script>
+
+    <style>
+        #y_axis {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="test">
+        <h1>Stock Chart ClojureScript test div</h1>
+    </div>
+    <div id="chart_container">
+        <div id="y_axis"></div>
+        <div id="chart"></div>
+        <div id="legend_container">
+            <div id="smoother" title="Smoothing"></div>
+            <div id="legend"></div>
+        </div>
+        <div id="slider"></div>
+    </div>
+
+    <script src="js/stock_chart_lib.js"></script>
+</body>
+</html>
