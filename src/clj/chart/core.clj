@@ -1,10 +1,11 @@
 (ns chart.core
   (:require [clojure.string :as str]
-            [chart.utils :as utils]
+            [clj-time.coerce :as jtc]
+            [clj-time.core :as jt]
             [clojure.set :as set])
   (:use [chart.datasources.yahoo]
+        [chart.utils]
         [chart.datasources.briefing]
-        [chart.earnings]
         [incanter core stats charts]))
 
 ;path to directory that contains earnings data html files
@@ -15,7 +16,7 @@
   "add a position index to a collection of maps. Position index is used to line up data on when displaying charts
   so that the 0 position becomes the alignment point"
   [price-data joda]
-  (let [pidx (utils/find-index (map :date price-data) joda)
+  (let [pidx (find-index (map :date price-data) joda)
         pos-range (range (- pidx) (- (count price-data) pidx))]
     (map #(assoc %1 :pos %2) price-data pos-range)))
 
@@ -36,16 +37,36 @@
   ;get index of first matching date in prices and return a slice of prices else nil
   (if-let [date-idx (first (keep-indexed #(if (= (:date %2) date) %1) prices))]
     (do
-      (utils/slice prices (- date-idx days-before) (+ date-idx days-after 1)))
+      (slice prices (- date-idx days-before) (+ date-idx days-after 1)))
     (list)))
+
+;TODO see if this method is still needed
+(defn prices-by-earnings-date
+  "group historical price data and earnings data into a single map"
+  [release-date earnings prices]
+  (let [equarters (same-quarter earnings release-date) ;get all earnings data the same quarter as release date
+        ]
+    (for [earnings-date equarters
+          price-data (with-pivot-date (prices-by-day-range prices (:release-date-joda earnings-date) 20 31) (:release-date-joda earnings-date))
+          :let [datum (assoc {}
+                        :date (jtc/to-epoch (get price-data :date))
+                        :earnings-release (joda->str (get earnings-date :release-date-joda) "yyyy-MMM-dd")
+                        :joda-date (get price-data :date)
+                        :close (get price-data :close)
+                        :adj-close (get price-data :adj-close)
+                        :fiscal-quarter (get earnings-date :fiscal-quarter)
+                        :year (jt/year (get price-data :date))
+                        :pos (get price-data :pos))]]
+      datum)))
 
 (defn chart-day-range
   "get stock prices for a range of dates before and after the input date
   returns a sequence of closing data maps"
   [ticker date before after]
-  (let [joda (utils/str->joda date)
-        data (with-pivot-date (prices-by-day-range (get-prices ticker) joda before after) joda)]
-    (map #(set/rename-keys % {:pos :x :close :y}) data)))
+  (let [joda (str->joda date)
+        data (with-pivot-date (prices-by-day-range (get-prices ticker) joda before after) joda)
+        cleaned (map #(update-in % [:date] joda->str "yyyy-MM-dd") data)]
+    (map #(set/rename-keys % {:pos :x :close :y}) cleaned)))
 
 
 ;(defn chart

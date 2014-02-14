@@ -1,6 +1,7 @@
 (ns chart.web-site.routes
   (:use compojure.core
-        ring.util.json-response)
+        ring.util.json-response
+        chart.core)
   (:require [compojure.route :as route]
             [compojure.handler :as handler]
             [compojure.response :as response]
@@ -16,7 +17,7 @@
 
 (defroutes main-routes
            (GET "/" [] (resp/redirect "/index.html"))
-           (GET "/data/:ticker/:date" [ticker date] (str "place holder for " ticker " " date))
+           (GET "/data/:ticker/:date" [ticker date] (json-response (chart-day-range ticker date 3 3)))
            (GET "/earnings/:ticker/:date" [ticker date] (str "place holder earnings " ticker " " date))
            ;(GET "/a" [] (resp/resource-response "/index.html" {:root "public"}))
            ;(GET "/f" [] (clojure.java.io/resource "public/index.html"))
