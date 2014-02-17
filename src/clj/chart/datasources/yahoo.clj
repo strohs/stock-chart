@@ -39,7 +39,7 @@
                   ]
               (conj accum data-map))) '() (rest csv-data)))
 
-(defn- daily-prices
+(defn- get-daily-prices
   "retrieves daily closing price data from yahoo. returns a parsed csv as a seq of vectors containing historical
   price data. First vector of the seq is the header: 'Date' 'Open' 'High' 'Low' 'Close' 'Volume' 'Adj Close'"
   [ticker start-date end-date]
@@ -50,11 +50,13 @@
         csv (csv/parse-csv (slurp url))]
     (csv/parse-csv (slurp url))))
 
+(def ^:private get-daily-prices-memo (memoize get-daily-prices))
+
 (defn get-prices
   "get daily stock prices for the specified ticker, between start-date and end-date inclusive. The dates should be
   strings in yyyy-MM-dd format."
   ([ticker] (get-prices ticker *min-date* (utils/current-day-str)))
   ([ticker start-date] (get-prices ticker start-date (utils/current-day-str)))
   ([ticker start-date end-date]
-   (let [csv (daily-prices ticker start-date end-date)]
+   (let [csv (get-daily-prices-memo ticker start-date end-date)]
      (vec (normalize-yahoo-data csv)))))

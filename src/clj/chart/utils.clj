@@ -17,6 +17,7 @@
     (re-matches #"-?\d+\.\d+" s) (Double/parseDouble s)
     :else s))
 
+
 (defn str->joda
   "parse the string s into a Joda DateTime object using the specified date-fmt string."
   ([s] (jf/parse (jf/formatter "yyyy-MM-dd") s))
@@ -35,6 +36,11 @@
   "unparse the joda DateTime (dt) into a string according to the format string (fmt)"
   [dt fmt]
   (jf/unparse (jf/formatter-local fmt) dt))
+
+(defn reformat
+  "reformat a date string into a different format. returns a string formatted in 'to-fmt'"
+  [date-str from-fmt to-fmt]
+  (joda->str (str->joda date-str from-fmt) to-fmt))
 
 (defn current-day-str [] (jf/unparse-local-date (jf/formatters :year-month-day) (jt/today)))
 

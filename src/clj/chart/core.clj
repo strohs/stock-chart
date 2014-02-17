@@ -33,18 +33,19 @@
 (defn- prices-by-day-range
   "get price data within a range of days before and days after 'date'.
   Retuns a coll of price data, else nil if date not found"
-  [prices date days-before days-after]
+  [price-data date days-before days-after]
   ;get index of first matching date in prices and return a slice of prices else nil
-  (if-let [date-idx (first (keep-indexed #(if (= (:date %2) date) %1) prices))]
+  (if-let [date-idx (first (keep-indexed #(if (= (:date %2) date) %1) price-data))]
     (do
-      (slice prices (- date-idx days-before) (+ date-idx days-after 1)))
+      (slice price-data (- date-idx days-before) (+ date-idx days-after 1)))
     (list)))
 
 ;TODO see if this method is still needed
 (defn prices-by-earnings-date
   "group historical price data and earnings data into a single map"
-  [release-date earnings prices]
-  (let [equarters (same-quarter earnings release-date) ;get all earnings data the same quarter as release date
+  [date earnings prices]
+  (let [ release-date (str->joda date)
+         equarters (same-quarter earnings date) ;get all earnings data the same quarter as release date
         ]
     (for [earnings-date equarters
           price-data (with-pivot-date (prices-by-day-range prices (:release-date-joda earnings-date) 20 31) (:release-date-joda earnings-date))
@@ -59,14 +60,28 @@
                         :pos (get price-data :pos))]]
       datum)))
 
+;;Functions starting with chart- are for use in javscripting charting
 (defn chart-day-range
   "get stock prices for a range of dates before and after the input date
   returns a sequence of closing data maps"
   [ticker date before after]
   (let [joda (str->joda date)
         data (with-pivot-date (prices-by-day-range (get-prices ticker) joda before after) joda)
-        cleaned (map #(update-in % [:date] joda->str "yyyy-MM-dd") data)]
+        cleaned (map #(update-in % [:date] joda->str "yyyy-MM-dd") data)] ;dates converted to string for JSON serialization
     (map #(set/rename-keys % {:pos :x :close :y}) cleaned)))
+
+(defn chart-historical-earnings-releases
+  "get closing price data around all historical earnings release dates. returns maps for JSON serialization"
+  [ticker release-date]
+  (let [epath (str *earnings-path* java.io.File/separator ticker ".html")
+        quarterly-earnings (same-quarter (get-earnings epath) release-date)] ;all earnings for release-date quarter
+    (for [qe quarterly-earnings
+          :let [er-date (:release-date qe)  ;earnings release-date
+                year (jt/year (:release-date-joda qe))
+                qtr (:fiscal-quarter qe)
+                prices (chart-day-range ticker er-date 2 2) ;map prices for the release-date
+                her-data (map #(assoc % :year-qtr (str year "-" qtr)) prices)]] ;append earnings info to the returned collection
+      her-data)))
 
 
 ;(defn chart

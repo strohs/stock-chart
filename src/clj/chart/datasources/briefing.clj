@@ -45,9 +45,10 @@
   [nodes]
   (let [data (map #(utils/str->numeric (clean (first (:content %)))) nodes)
         mapped-data (zipmap [:release-date :fiscal-end-date :fiscal-quarter :release-time :eps-surprise :eps-actual :eps-consenus :eps-1year-change :rev-actual :rev-consensus :rev-y2y]
-                            data)]
+                            data)
+        mapped-data (update-in mapped-data [:release-date] utils/reformat "dd-MMM-yy" "yyyy-MM-dd")]
     ;convert release-date into a joda date as it will be used heavily later on
-    (assoc mapped-data :release-date-joda (utils/str->joda (:release-date mapped-data) "dd-MMM-yy"))))
+    (assoc mapped-data :release-date-joda (utils/str->joda (:release-date mapped-data)))))
 
 (defn- months->quarters
   "build a map of release-date months to fiscal quarters. This map will be used to repair any missing
@@ -87,10 +88,11 @@
 
 ;TODO earnings util functions start here. Move to different namespace
 (defn same-quarter
-  "return earnings data with the same quarter as release-date. It will try to guess it based on previous
+  "return historical earnings data with the same quarter as release-date. It will try to guess it based on previous
   quarters/release-date information"
-  [earnings release-date]
-  (let [qmap (months->quarters earnings)
+  [earnings date]
+  (let [release-date (utils/str->joda date)
+        qmap (months->quarters earnings)
         month (jt/month release-date)
         quarter (first (qmap month))]
     (filter #(= quarter (:fiscal-quarter %)) earnings)))
