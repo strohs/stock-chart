@@ -70,8 +70,9 @@
         cleaned (map #(update-in % [:date] joda->str "yyyy-MM-dd") data)] ;dates converted to string for JSON serialization
     (map #(set/rename-keys % {:pos :x :close :y}) cleaned)))
 
-(defn chart-historical-earnings-releases
-  "get closing price data around all historical earnings release dates. returns maps for JSON serialization"
+(defn chart-earnings-range
+  "get closing price data around all historical earnings release dates.
+  returns a coll containing colls of maps, each sub coll contains the price data map for the earnings quarter"
   [ticker release-date]
   (let [epath (str *earnings-path* java.io.File/separator ticker ".html")
         quarterly-earnings (same-quarter (get-earnings epath) release-date)] ;all earnings for release-date quarter
@@ -79,8 +80,8 @@
           :let [er-date (:release-date qe)  ;earnings release-date
                 year (jt/year (:release-date-joda qe))
                 qtr (:fiscal-quarter qe)
-                prices (chart-day-range ticker er-date 2 2) ;map prices for the release-date
-                her-data (map #(assoc % :year-qtr (str year "-" qtr)) prices)]] ;append earnings info to the returned collection
+                prices (chart-day-range ticker er-date 10 10) ;map prices for the release-date
+                her-data (map #(assoc % :year-qtr (str year "Q" qtr)) prices)]] ;append earnings info to the returned collection
       her-data)))
 
 
