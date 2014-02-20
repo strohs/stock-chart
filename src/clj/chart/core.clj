@@ -7,7 +7,8 @@
   (:use [chart.datasources.yahoo]
         [chart.utils]
         [chart.datasources.briefing]
-        [incanter core stats charts]))
+        ;[incanter core stats charts]
+        ))
 
 ;path to directory that contains earnings data html files
 ;(def ^:dynamic *earnings-path* "C:\\Users\\Cliff\\IdeaProjects\\stock-chart\\earnings")
@@ -81,7 +82,8 @@
   "get closing price data around all historical earnings release dates.
   returns a coll containing colls of maps, each sub coll contains the price data map for the earnings quarter"
   [ticker release-date]
-  (let [quarterly-earnings (same-quarter (parse-earnings ticker) release-date)] ;all earnings for release-date quarter
+  (let [quarterly-earnings (same-quarter (parse-earnings ticker) release-date)
+        _ (println (log-data quarterly-earnings))] ;all earnings for release-date quarter
     (for [qe quarterly-earnings
           :let [er-date (:release-date qe)  ;earnings release-date
                 year (jt/year (:release-date-joda qe))

@@ -47,7 +47,8 @@
         {emonth :month eday :day eyear :year} (utils/datetime-map (utils/str->joda end-date "yyyy-MM-dd"))
         url (format-yahoo-url ticker smonth sday syear emonth eday eyear)
         _ (println "YAHOO URL: " url)
-        csv (csv/parse-csv (slurp url))]
+        csv (csv/parse-csv (slurp url))
+        _ (println (utils/log-data csv))]
     (csv/parse-csv (slurp url))))
 
 (def ^:private get-daily-prices-memo (memoize get-daily-prices))

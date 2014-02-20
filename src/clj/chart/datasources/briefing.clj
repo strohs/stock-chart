@@ -83,6 +83,7 @@
   "get all earnings available and return a coll of EarningsData (sorted by release-date)"
   [path]
   (let [scraped (scrape-data path) ;returns coll of maps (scraped by enlive)
+        _ (println "scraped: " (utils/log-data scraped))
         normalized (repair-quarters (map extract scraped)) ;try to fix any missing quarter data
                                    ;earnings-data (map #(map->EarningsData %) normalized)
         ]

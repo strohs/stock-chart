@@ -73,4 +73,7 @@
   (let [date (str->joda date)]
     (some #(= (:date %) date) price-data)))
 
+(defn log-data [data]
+  (str "count:" (count data) " first:" (first data) " last:" (last data)))
+
 ;TO rename keys in a map (map #(clojure.set/rename-keys % {:date :x :price :y}) pdmap)
