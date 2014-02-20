@@ -23,8 +23,8 @@
 (defn create-graph [data]
   (Rickshaw.Graph. (clj->js {
                               :element (.getElementById js/document chart-id)
-                              :width 960
-                              :height 500
+                              :width 1024
+                              :height 800
                               :renderer "line"
                               :series (build-series data :year-qtr)})))
 
@@ -45,14 +45,15 @@
   (Rickshaw.Graph.Axis.X. (clj->js { :graph g
                                      :orientation "bottom"
                                      :tickFormat days-format
-                                     :pixelsPerTick: 75
+                                     :pixelsPerTick: 25
                                      :element (.getElementById js/document "x_axis")})))
 
 (defn create-y-axis [g]
-  (Rickshaw.Graph.Axis.Y. (clj->js { :graph g
-                                     :orientation "left"
-                                     :tickFormat (Rickshaw.Fixtures.Number.formatBase1024KMGTP)
-                                     :element (.getElementById js/document "y_axis")})))
+  (Rickshaw.Graph.Axis.Y. (clj->js {:graph      g
+                                    :tickFormat (Rickshaw.Fixtures.Number.formatBase1024KMGTP)
+                                    ;:orientation "left"
+                                    ;:element (.getElementById js/document "y_axis")
+                                    })))
 
 (defn render-axes [a] (.render a))
 

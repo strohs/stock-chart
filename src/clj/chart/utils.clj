@@ -60,7 +60,7 @@
     (vec (keep-indexed #(if (contains? indexes %1) %2) v))))
 
 (defn find-index
-  "find the index of the first matching item in the coll"
+  "find the index of the first matching item in the coll."
   [coll item]
   (ffirst (filter #(= item (second %)) (map-indexed vector coll))))
 
@@ -68,5 +68,9 @@
   "get names of files in a directory, filter names by suffix"
   [dir suffix]
   (filter #(.endsWith % suffix) (.list dir)))
+
+(defn contains-date? [price-data date]
+  (let [date (str->joda date)]
+    (some #(= (:date %) date) price-data)))
 
 ;TO rename keys in a map (map #(clojure.set/rename-keys % {:date :x :price :y}) pdmap)

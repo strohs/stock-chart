@@ -7,6 +7,8 @@
 ;namespace for retrieving earnings data from a briefing.com (payservice) earnings page. Briefing.com does not provide
 ; a api to retrieve this data, so it must be scraped from a saved HTML page ... for now.
 
+(def ^:dynamic *earnings-path* "C:\\Users\\Cliff\\IdeaProjects\\stock-chart\\dev-resources\\public\\earnings")
+
 ;data that can be returned from briefing.com earnings page
 (defrecord EarningsData [release-date
                          release-date-joda
@@ -85,6 +87,10 @@
                                    ;earnings-data (map #(map->EarningsData %) normalized)
         ]
     (sort-by :release-date-joda normalized)))
+
+(defn parse-earnings [ticker]
+  (let [epath (str *earnings-path* java.io.File/separator ticker ".html")]
+    (get-earnings epath)))
 
 ;TODO earnings util functions start here. Move to different namespace
 (defn same-quarter
