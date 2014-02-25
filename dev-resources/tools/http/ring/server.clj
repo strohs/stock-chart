@@ -29,6 +29,9 @@
                 (json-response (chart-earnings-range ticker date)))
            (GET "/earnings/:ticker/:date" [ticker date]
                 (json-response (chart-earnings-range ticker date)))
+           (GET "/ticker/list" []
+                (let [names (file-names (io/as-file (io/resource "public/earnings")) "html")]
+                  (json-response names)))
            ;(GET "/a" [] (resp/resource-response "/index.html" {:root "public"}))
            ;(GET "/f" [] (clojure.java.io/resource "public/index.html"))
            (resources "/"))

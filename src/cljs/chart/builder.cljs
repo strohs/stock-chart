@@ -23,8 +23,8 @@
 (defn create-graph [data]
   (Rickshaw.Graph. (clj->js {
                               :element (.getElementById js/document chart-id)
-                              :width 1024
-                              :height 800
+                              :width 1400
+                              :height 900
                               :renderer "line"
                               :series (build-series data :year-qtr)})))
 

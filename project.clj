@@ -24,7 +24,7 @@
             [lein-cljsbuild "1.0.2"]]
 
   :hooks [leiningen.cljsbuild]
-  :ring {:handler chart.web-site.routes/app}
+  ;:ring {:handler chart.web-site.routes/app}
 
   :cljsbuild
   {:builds {;; This build is only used for including any cljs source

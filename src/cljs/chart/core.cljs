@@ -43,4 +43,5 @@
                   (fn [event]
                     (stock-prices (get-ticker) (get-date))
                     (events/stop-propagation event)
-                    (events/prevent-default event))))
+                    (events/prevent-default event)
+                    (d/set-text! (d/by-id "title") (str "Prices for: " (get-ticker))))))

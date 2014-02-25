@@ -2,7 +2,8 @@
   (:require [clojure.string :as str]
             [clj-time.format :as jf]
             [clj-time.core :as jt]
-            [clj-time.local :as jl]))
+            [clj-time.local :as jl]
+            [clojure.java.io :refer [file]]))
 
 
 (defn parse-string
@@ -65,9 +66,10 @@
   (ffirst (filter #(= item (second %)) (map-indexed vector coll))))
 
 (defn file-names
-  "get names of files in a directory, filter names by suffix"
+  "get names of files in a directory, does not include the file suffix"
   [dir suffix]
-  (filter #(.endsWith % suffix) (.list dir)))
+  (map #(re-find #"\w+" %)
+       (filter #(.endsWith % suffix) (.list dir))))
 
 (defn contains-date? [price-data date]
   (let [date (str->joda date)]

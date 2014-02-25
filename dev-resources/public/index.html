@@ -24,8 +24,8 @@
 </head>
 
 <body>
-    <div id="title">
-        <h1>Closing prices for</h1>
+    <div id="summary">
+        <h1 id="title"></h1>
     </div>
     <div id="chart_container">
         <div id="y_axis"></div>
@@ -42,6 +42,9 @@
     <form id="stock-form">
         <p>
             <label for="ticker">Ticker:</label>
+            <!--<select id="ticker" name="ticker">-->
+
+            <!--</select>-->
             <input type="text" name="ticker" id="ticker" size="10" required>
         </p>
         <p>
