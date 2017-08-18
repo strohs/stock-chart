@@ -34,7 +34,8 @@ symbol and select an earnings release date.
 4. click the submit button to generate a line graph of the price movement around the earnings release date.
 
 ## Screenshot
-Screenshot of the line chart generated for Amazon.com, ticker (AMZN)
+Screenshot of the line chart generated for Amazon.com, ticker (AMZN), The day of the earnings release is marked as 
+"D0" on the charts x-axis
 ![alt text](https://github.com/strohs/stock-chart/blob/master/Stock-Trends-Chart.jpg "Line Chart screenshot")
 
 ## License
