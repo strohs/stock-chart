@@ -6,9 +6,9 @@
             [clojure.set :as set])
   (:use [chart.datasources.yahoo]
         [chart.utils]
-        [chart.datasources.briefing]
+        [chart.datasources.briefing]))
         ;[incanter core stats charts]
-        ))
+
 
 ;path to directory that contains earnings data html files
 ;(def ^:dynamic *earnings-path* "C:\\Users\\Cliff\\IdeaProjects\\stock-chart\\earnings")
@@ -69,13 +69,11 @@
   returns a sequence of closing data maps"
   [ticker date before after]
   (let [price-data (get-prices ticker)]
-    (if (contains-date? price-data date) ;make sure price data contains the release date
-      (let [price-data (get-prices ticker)
-            joda (str->joda date)
+    (when (contains-date? price-data date) ;make sure price data contains the release date
+      (let [joda (str->joda date)
             data (with-pivot-date (prices-by-day-range price-data joda before after) joda)
             cleaned (map #(update-in % [:date] joda->str "yyyy-MM-dd") data)]
-        (map #(set/rename-keys % {:pos :x :close :y}) cleaned))
-      (throw (NoSuchElementException. (str "date " date " not found in price data"))))))
+        (map #(set/rename-keys % {:pos :x :close :y}) cleaned)))))
 
 
 (defn chart-earnings-range
@@ -83,14 +81,18 @@
   returns a coll containing colls of maps, each sub coll contains the price data map for the earnings quarter"
   [ticker release-date]
   (let [quarterly-earnings (same-quarter (parse-earnings ticker) release-date)
-        _ (println (log-data quarterly-earnings))] ;all earnings for release-date quarter
-    (for [qe quarterly-earnings
-          :let [er-date (:release-date qe)  ;earnings release-date
-                year (jt/year (:release-date-joda qe))
-                qtr (:fiscal-quarter qe)
-                prices (chart-day-range ticker er-date 20 31);map prices for the release-date
-                her-data (map #(assoc % :year-qtr (str year "Q" qtr)) prices)]] ;append earnings info to the returned collection
-      her-data)))
+        _ (println (log-data quarterly-earnings))
+        final-data (for [qe quarterly-earnings ;all earnings for release-date quarter
+                         :let [er-date (:release-date qe)  ;earnings release-date
+                               year (jt/year (:release-date-joda qe))
+                               qtr (:fiscal-quarter qe)
+                               prices (chart-day-range ticker er-date 20 31);map prices for the release-date
+                               her-data (map #(assoc % :year-qtr (str year "Q" qtr)) prices)]] ;append earnings info to the returned collection
+                     her-data)]
+       ;;filter out empty collections, these are quarters for which we have no price data
+    (filter not-empty final-data)))
+
+
 
 
 ;(defn chart
@@ -113,5 +115,5 @@
 
 ;(-main "CRM" "2014-02-27" "src/crm.html")
 ;(view (time-series-plot :date :close :group-by :pos :legend true :data tdata))
-;(def ed (get-earnings (str *earnings-path* java.io.File/separator "cgnx" ".html")))
-;(def pd (get-prices "cgnx"))
+;;(def ed (get-earnings (str *earnings-path* "/cgnx" ".html")))
+;;(def pd (get-prices "cgnx"))

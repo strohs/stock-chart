@@ -2,6 +2,9 @@
 
 (def chart-container-id "chart_container")
 (def chart-id "chart")
+(def legend-id "legend")
+(def x-axis-id "x_axis")
+(def y-axis-id "y_axis")
 
 (defn days-format
   "custom formatter used for an x-axis"
@@ -23,9 +26,10 @@
 (defn create-graph [data]
   (Rickshaw.Graph. (clj->js {
                               :element (.getElementById js/document chart-id)
-                              :width 1400
-                              :height 900
+                              :width 800
+                              :height 600
                               :renderer "line"
+                              :interpolation "linear"
                               :series (build-series data :year-qtr)})))
 
 
@@ -50,14 +54,20 @@
 
 (defn create-y-axis [g]
   (Rickshaw.Graph.Axis.Y. (clj->js {:graph      g
-                                    :tickFormat (Rickshaw.Fixtures.Number.formatBase1024KMGTP)
+                                    :tickFormat (Rickshaw.Fixtures.Number.formatBase1024KMGTP)})))
                                     ;:orientation "left"
                                     ;:element (.getElementById js/document "y_axis")
-                                    })))
+
 
 (defn render-axes [a] (.render a))
 
 (defn render-chart [data]
+  ;clear any charts that was previously set
+  (set! (. (.getElementById js/document chart-id) -innerHTML) "")
+  (set! (. (.getElementById js/document legend-id) -innerHTML) "")
+  (set! (. (.getElementById js/document x-axis-id) -innerHTML) "")
+  (set! (. (.getElementById js/document y-axis-id) -innerHTML) "")
+
   (let [g (create-graph data)
         _ (hover-detail g)
         l (create-legend g)

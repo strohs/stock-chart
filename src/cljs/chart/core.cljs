@@ -30,18 +30,18 @@
   (render-chart response))
 
 
-
 (defn stock-prices [ticker date]
   (GET (str earnings-url "/" ticker "/" date) {:response-format :json
-                                           :keywords? true
-                                           :handler build-chart
-                                           :error-handler error-handler}))
+                                               :keywords? true
+                                               :handler build-chart
+                                               :error-handler error-handler}))
 
 (defn ^:export main []
+  ;;listen for a submit event from the form
   (events/listen! (d/by-id button-id)
                   :click
                   (fn [event]
                     (stock-prices (get-ticker) (get-date))
                     (events/stop-propagation event)
                     (events/prevent-default event)
-                    (d/set-text! (d/by-id "title") (str "Prices for: " (get-ticker))))))
+                    (d/set-text! (d/by-id "title") (str "Quarterly Stock Price Movement for: " (get-ticker))))))

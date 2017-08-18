@@ -5,9 +5,9 @@
             [clj-time.core :as jt]))
 
 ;namespace for retrieving earnings data from a briefing.com (payservice) earnings page. Briefing.com does not provide
-; a api to retrieve this data, so it must be scraped from a saved HTML page ... for now.
+; a api to retrieve this data, so it must be scraped from a saved HTML pages ... for now.
 
-(def ^:dynamic *earnings-path* "C:\\Users\\Cliff\\IdeaProjects\\stock-chart\\dev-resources\\public\\earnings")
+(def ^:dynamic *earnings-path* "dev-resources/public/earnings")
 
 ;data that can be returned from briefing.com earnings page
 (defrecord EarningsData [release-date
@@ -26,7 +26,9 @@
 
 ;(def ^:dynamic *earnings-date-selector* [:table :tr :td :table.search-results #{:tr.rD :tr.rL} [html/first-child :td] :div [html/text-node]])
 ;;selects all earnings data, including: date, actual, consensus, etc.. as reported by briefing.com
-(def ^:dynamic *earnings-selector* [:table :tr :td :table.search-results #{:tr.rD :tr.rL} :td :> :div])
+;; (def ^:dynamic *earnings-selector* [:table :tr :td :table.search-results #{:tr.rD :tr.rL} :td :> :div])
+;; new earnings selector as of Oct-01-2014
+(def ^:dynamic *earnings-selector* [:table.search-results #{:tr.rD :tr.rL} :td :> :div])
 
 (defn- scrape-data
   "use enlive to scrape earnings data for each quarter and partition it into groups. The Briefing.com earnings page
@@ -84,13 +86,13 @@
   [path]
   (let [scraped (scrape-data path) ;returns coll of maps (scraped by enlive)
         _ (println "scraped: " (utils/log-data scraped))
-        normalized (repair-quarters (map extract scraped)) ;try to fix any missing quarter data
+        normalized (repair-quarters (map extract scraped))] ;try to fix any missing quarter data
                                    ;earnings-data (map #(map->EarningsData %) normalized)
-        ]
+
     (sort-by :release-date-joda normalized)))
 
 (defn parse-earnings [ticker]
-  (let [epath (str *earnings-path* java.io.File/separator ticker ".html")]
+  (let [epath (str *earnings-path* "/" ticker ".html")]
     (get-earnings epath)))
 
 ;TODO earnings util functions start here. Move to different namespace

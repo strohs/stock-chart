@@ -15,7 +15,10 @@
                         adj-close])
 
 (def ^:dynamic *min-date* "the minimum date supported by yahoo" "1986-06-9")
-(def ^:dynamic *yahoo-price-url* "http://ichart.finance.yahoo.com/table.csv?s=%s&d=%s&e=%s&f=%s&g=d&a=%s&b=%s&c=%s&ignore=.csv")
+
+;;NOTE Yahoo finance API is no longer free, using hardcoded csv data
+;;(def ^:dynamic *yahoo-price-url* "http://chart.finance.yahoo.com/table.csv?s=%s&d=%s&e=%s&f=%s&g=d&a=%s&b=%s&c=%s&ignore=.csv")
+(def ^:dynamic *yahoo-price-url* "dev-resources/public/AMZN-2010-2014.csv")
 
 (defn- format-yahoo-url
   "format the url string for retrieving stock price data from yahoo.
@@ -34,9 +37,9 @@
   (csv data is returned from yahoo in descending order by date.)"
   [csv-data]
   (reduce (fn [accum v]
-            (let [data-map (zipmap [:date :open :high :low :close :volume :adj-close] (map utils/parse-string v))
+            (let [data-map (zipmap [:date :open :high :low :close :volume :adj-close] (map utils/parse-string v))]
                   ;closing-data (map->ClosingData data-map)
-                  ]
+
               (conj accum data-map))) '() (rest csv-data)))
 
 (defn- get-daily-prices

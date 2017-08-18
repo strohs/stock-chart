@@ -20,7 +20,9 @@
            (GET "/data/:ticker/:date/:before/:after" [ticker date before after]
                 (json-response (chart-day-range ticker date (parse-string before) (parse-string after))))
            (GET "/earnings/:ticker/:date" [ticker date]
-                (json-response (chart-earnings-range ticker date)))
+                (json-response
+                  (let [earnings-dates (chart-earnings-range ticker date)]
+                    earnings-dates)))
            ;(GET "/a" [] (resp/resource-response "/index.html" {:root "public"}))
            ;(GET "/f" [] (clojure.java.io/resource "public/index.html"))
            (route/resources "/"))
