@@ -8,6 +8,8 @@
             [compojure.response :as response]
             [ring.util.response :as resp]))
 
+;;;; This namespace contains the HTTP request routes accepted by this application
+
 ;(defn json-response [data & [status]]
 ;  {:status  (or status 200)
 ;   :headers {"Content-Type" "application/json"}

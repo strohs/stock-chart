@@ -3,7 +3,7 @@
             [chart.utils :as utils]
             [clj-time.core :as jt]))
 
-;namespace used to retrieve stock price data from finance.yahoo.com
+;;; namespace used to retrieve stock price data from finance.yahoo.com
 
 ;record for daily stock price closing data, date field should be a Joda DateTime object
 (defrecord ClosingData [date

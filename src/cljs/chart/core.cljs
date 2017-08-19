@@ -4,6 +4,8 @@
             [domina.events :as events])
   (:use [chart.builder :only [render-chart]]))
 
+;;;; Clojurescript entry point and driver for retrieving earnings data and stock prices
+
 ;defing constants for our html ID fields
 (def date-id "date")
 (def ticker-id "ticker")

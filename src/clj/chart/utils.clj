@@ -5,6 +5,8 @@
             [clj-time.local :as jl]
             [clojure.java.io :refer [file]]))
 
+;;; Utilities for converting string to and from JODA dates
+
 
 (defn parse-string
   "Attempts to parse s into one of three types.  It first attempts to parse into a joda DateTime.

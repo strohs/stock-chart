@@ -9,6 +9,7 @@
         [chart.datasources.briefing]))
         ;[incanter core stats charts]
 
+;;This namespace is the main entry point for retrieving daily quotes and earnings release dates
 
 ;path to directory that contains earnings data html files
 ;(def ^:dynamic *earnings-path* "C:\\Users\\Cliff\\IdeaProjects\\stock-chart\\earnings")
