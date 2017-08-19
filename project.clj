@@ -11,6 +11,7 @@
                  [compojure "1.1.6"]
                  [ring-json-response "0.2.0"]
                  [org.clojure/clojurescript "0.0-2371"]
+                 ;[org.clojure/clojurescript "1.9.908"]
                  [cljs-ajax "0.2.3"]
                  [domina "1.0.2"]]
 
@@ -22,8 +23,9 @@
 
   :plugins [[lein-ring "0.8.10"]
             [lein-cljsbuild "1.0.3"]]
+            ;[lein-cljsbuild "1.1.7"]]
 
-  :hooks [leiningen.cljsbuild]
+  ;:hooks [leiningen.cljsbuild]
   ;:ring {:handler chart.web-site.routes/app}
 
   ;; Leiningen plugin that makes it quick and easy to automatically compile your ClojureScript code into Javascript
@@ -41,6 +43,6 @@
               ;:jar true
               ;; Compilation Options
               :compiler
-                            {:output-to "dev-resources/public/js/stock_chart_lib.js"
-                             :optimizations :whitespace
-                             :pretty-print false}}}})
+                {:output-to "dev-resources/public/js/stock_chart_lib.js"
+                 :optimizations :whitespace
+                 :pretty-print false}}}})

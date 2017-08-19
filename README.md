@@ -27,7 +27,7 @@ Earnings release date data is HTML scraped from Briefing.com and can therefore b
 
 ## Usage
 After cloning the repository, go into the stock-chart project directory, and use Leiningen to run
-1. ```lein clean``` then ```lein compile``` and then ```lein repl```
+1. ```lein clean``` then ```lein cljsbuild once``` then ```lein compile``` and then ```lein repl```
 2. at the user=> prompt type ```(run)``` to start Ring's local embedded Jetty server at (default) localhost:3000
 3. go to http://localhost:3000 on your browser, a very simple HTML form should appear that allows you to enter a ticker
 symbol and select an earnings release date.

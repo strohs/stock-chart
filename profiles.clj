@@ -13,15 +13,16 @@
 {:shared {:clean-targets ["out" :target-path]
           :test-paths ["test/clj" "test/cljs"]
           :resources-paths ["dev-resources"]
-          :plugins [[com.cemerick/clojurescript.test "0.2.1"]]
+          ;:plugins [[com.cemerick/clojurescript.test "0.2.1"]]
           :cljsbuild
           {:builds {:stock-chart-lib
                     {:source-paths ["test/cljs"]
                      :compiler
                      {:output-dir "dev-resources/public/js"
-                      :source-map "dev-resources/public/js/stock_chart_lib.js.map"}}}
-           :test-commands {"phantomjs"
-                           ["phantomjs" :runner "dev-resources/public/js/stock_chart_lib.js"]}}}
+                      :source-map "dev-resources/public/js/stock_chart_lib.js.map"}}}}}
+          ;;NOTE testing disabled
+           ;:test-commands {"phantomjs" ["phantomjs" :runner "dev-resources/public/js/stock_chart_lib.js"]}}}
+
  :dev [:shared
        {:source-paths ["dev-resources/tools/http" "dev-resources/tools/repl"]
         :dependencies [[ring "1.2.1"]
