@@ -10,7 +10,7 @@ Maybe WalMart always move up 2 dollars before its Q1 release. Maybe Amazon alway
 Unitl that time, the app will only allow you to view data for Amazon(AMZN). 
 
 ## Libaries
-As mentioned previously, this application was a learning tool. I used it to learn basics of the following clojure libraries:
+The following clojure libraries were used:
 * [clojurescript](https://github.com/clojure/clojurescript) - in lieu of writing any javascript
 * [austin](https://github.com/cemerick/austin) - for its clojurescript browser REPL
 * [enlive](https://github.com/cgrand/enlive) - to scrape earnings release dates from Briefing.com
