@@ -5,6 +5,7 @@
             [clj-time.core :as jt]))
 
 ;;; namespace used to retrieve stock price data from finance.yahoo.com
+;;; Yahoo finance will, on occassion, reject your cookie, if that happens re-submit the request
 
 ;record for daily stock price closing data, date field should be a Joda DateTime object
 (defrecord ClosingData [date
@@ -52,7 +53,7 @@
   (let [yahoo-url (format "https://finance.yahoo.com/quote/%s/history" symbol)
         _ (println "URL:" yahoo-url)
         yahoo-resp (client/get yahoo-url)
-        _ (println yahoo-resp)
+        ;_ (println yahoo-resp)
         b-cookie (get-b-cookie yahoo-resp)
         _ (println "BCookie:" b-cookie)
         crumb (get-crumb yahoo-resp)
