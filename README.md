@@ -6,8 +6,10 @@ see how a stock's price moves in previous quarters. Once the data is plotted on 
 in and out of a quarterly earnings release. 
 Maybe WalMart always move up 2 dollars before its Q1 release. Maybe Amazon always goes down 15 dollars during the five days before it Q3 release.
 
-<b>Note:</b> The datasources used by this app have gone down and/or are no longer free. I'll have to look for another free source.
-Unitl that time, the app will only allow you to view data for Amazon(AMZN). 
+<b>Note:</b> The datasources used by this app have gone down and/or are no longer free. 
+I'll have to scour the web for another free source.
+Until that time, the app will only allow you to view data for Amazon(AMZN), as I have to hard code earnings release dates,
+into the app 
 
 ## Libaries
 The following clojure libraries were used:
@@ -23,7 +25,7 @@ The following clojure libraries were used:
 
 ## Datasources
 Historical closing price data for a stock is pulled from Yahoo Finance's free (for now) HTTP API.
-Earnings release date data is HTML scraped from Briefing.com and can therefore break if the site changes.  
+Earnings release date data is HTML scraped from Briefing.com, this site is currently down.  
 
 ## Usage
 After cloning the repository, go into the stock-chart project directory, and use Leiningen to run
