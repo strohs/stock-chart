@@ -2,6 +2,7 @@
   (:require [clojure.string :as str]
             [clj-time.format :as jf]
             [clj-time.core :as jt]
+            [clj-time.coerce :as jc]
             [clj-time.local :as jl]
             [clojure.java.io :refer [file]]))
 
@@ -39,6 +40,14 @@
   "unparse the joda DateTime (dt) into a string according to the format string (fmt)"
   [dt fmt]
   (jf/unparse (jf/formatter-local fmt) dt))
+
+(defn str->epoch
+  "convert a String in yyyy-MM-dd format to a unix epoch time
+  returns - a long containing the unix epoch time"
+  [s]
+  ;;have to set time-zone offset to -5 for east coast time
+  (jc/to-epoch (jt/from-time-zone (str->joda s) (jt/time-zone-for-offset -5))))
+
 
 (defn reformat
   "reformat a date string into a different format. returns a string formatted in 'to-fmt'"

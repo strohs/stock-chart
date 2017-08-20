@@ -1,7 +1,8 @@
 ;;; This namespace is used for development and testing purpose only.
 (ns ring.server
   (:use chart.core
-        chart.utils)
+        chart.utils
+        chart.datasources.yahoo)
   (:require [cemerick.austin.repls :refer (browser-connected-repl-js)]
             [net.cgrand.enlive-html :as enlive]
             [compojure.route :refer (resources)]

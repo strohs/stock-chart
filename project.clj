@@ -7,6 +7,7 @@
                  [enlive "1.1.5"]
                  [incanter "1.5.4"]
                  [clj-time "0.6.0"]
+                 [clj-http "2.3.0"]
                  [clojure-csv/clojure-csv "2.0.1"]
                  [compojure "1.1.6"]
                  [ring-json-response "0.2.0"]

@@ -45,7 +45,7 @@
 
 
 (defn- extract
-  "extract node data into a map"
+  "extract enlive node data into a clojure map"
   [nodes]
   (let [data (map #(utils/str->numeric (clean (first (:content %)))) nodes)
         mapped-data (zipmap [:release-date :fiscal-end-date :fiscal-quarter :release-time :eps-surprise :eps-actual :eps-consenus :eps-1year-change :rev-actual :rev-consensus :rev-y2y]
@@ -91,7 +91,9 @@
 
     (sort-by :release-date-joda normalized)))
 
-(defn parse-earnings [ticker]
+(defn parse-earnings
+  "entry point function to parse begin parsing earnings release dates from our web pages"
+  [ticker]
   (let [epath (str *earnings-path* "/" ticker ".html")]
     (get-earnings epath)))
 

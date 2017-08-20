@@ -11,13 +11,11 @@
 
 ;;This namespace is the main entry point for retrieving daily quotes and earnings release dates
 
-;path to directory that contains earnings data html files
-;(def ^:dynamic *earnings-path* "C:\\Users\\Cliff\\IdeaProjects\\stock-chart\\earnings")
 
 
 (defn- with-pivot-date
-  "add a position index to a collection of maps. Position index is used to line up data on when displaying charts
-  so that the 0 position becomes the alignment point"
+  "add a position index to a collection of maps. Position index is used to line up data when displaying
+  rickshaw charts so that the 0 position becomes the alignment point"
   [price-data joda]
   (if-let [pidx (find-index (map :date price-data) joda)]
     (let [pos-range (range (- pidx) (- (count price-data) pidx))]
@@ -36,7 +34,7 @@
 
 (defn- prices-by-day-range
   "get price data within a range of days before and days after 'date'.
-  Retuns a coll of price data, else nil if date not found"
+  Returns a coll of price data, else nil if date not found"
   [price-data date days-before days-after]
   ;get index of first matching date in prices and return a slice of prices else nil
   (if-let [date-idx (first (keep-indexed #(if (= (:date %2) date) %1) price-data))]
@@ -68,11 +66,11 @@
 (defn chart-day-range
   "get stock prices for a range of dates before and after the input date
   returns a sequence of closing data maps"
-  [ticker date before after]
-  (let [price-data (get-prices ticker)]
+  [ticker date days-before days-after]
+  (let [price-data (get-prices ticker)]    ;get daily closing prices from out Finance URL
     (when (contains-date? price-data date) ;make sure price data contains the release date
       (let [joda (str->joda date)
-            data (with-pivot-date (prices-by-day-range price-data joda before after) joda)
+            data (with-pivot-date (prices-by-day-range price-data joda days-before days-after) joda)
             cleaned (map #(update-in % [:date] joda->str "yyyy-MM-dd") data)]
         (map #(set/rename-keys % {:pos :x :close :y}) cleaned)))))
 

@@ -1,6 +1,6 @@
 (ns chart.builder)
 
-;;; clojurscript namespace used to build line charts details required by rickshaw
+;;; clojurescript namespace used to build the line graph details required by rickshaw
 
 (def chart-container-id "chart_container")
 (def chart-id "chart")
