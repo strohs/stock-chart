@@ -11,7 +11,7 @@ I'll have to scour the web for another free source.
 Until that time, the app will only allow you to view data for Amazon(AMZN), as I have to hard code earnings release dates,
 into the app 
 
-## Libaries
+## Libraries
 The following clojure libraries were used:
 * [clojurescript](https://github.com/clojure/clojurescript) - in lieu of writing any javascript
 * [austin](https://github.com/cemerick/austin) - for its clojurescript browser REPL
